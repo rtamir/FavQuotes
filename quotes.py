@@ -2,7 +2,7 @@ from flask import Flask, render_template,request, redirect,url_for
 from flask_sqlalchemy import SQLAlchemy
 
 
-app = Flask(__name__)
+app = Flask(__name__,template_folder="favquotes_templates")
 
 app.config['SQLALCHEMY_DATABASE_URI'] ='postgresql+psycopg2://postgres:Welcome123@localhost/quotes'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False 
